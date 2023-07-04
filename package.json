@@ -8,10 +8,10 @@
     "start": "next start",
     "lint": "next lint",
     "lint:fix": "eslint --fix",
-    "husk-check": "yarn lint"
+    "husky-check": "yarn lint"
   },
   "lint-staged": {
-    "src/**/*.ts": "yarn husk-check"
+    "*": "yarn husky-check"
   },
   "dependencies": {
     "@types/lint-staged": "^13.2.0",
