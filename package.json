@@ -12,7 +12,7 @@
     "husky-check": "yarn ts-lint"
   },
   "lint-staged": {
-    "*/": "yarn husky-check"
+    "*/": "tsc --noEmit --incremental --watch"
   },
   "dependencies": {
     "@types/lint-staged": "^13.2.0",
