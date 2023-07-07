@@ -9,7 +9,7 @@
     "lint": "next lint",
     "lint:fix": "eslint --fix",
     "format": "prettier --write .",
-    "check-all": "yarn lint && yarn format && yarn lint:fix"
+    "fix-all": " yarn format && yarn lint:fix"
   },
   "dependencies": {
     "@types/lint-staged": "^13.2.0",
