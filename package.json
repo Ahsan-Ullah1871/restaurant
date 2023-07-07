@@ -9,10 +9,7 @@
     "lint": "next lint",
     "ts-lint": "tsc --noEmit --incremental --watch",
     "lint:fix": "eslint --fix",
-    "husky-check": "yarn ts-lint"
-  },
-  "lint-staged": {
-    "*/": "tsc --noEmit --incremental --watch"
+    "husky-check": "yarn lint && yarn ts-lint"
   },
   "dependencies": {
     "@types/lint-staged": "^13.2.0",
@@ -31,7 +28,10 @@
     "typescript": "5.1.6"
   },
   "devDependencies": {
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
     "husky": "^8.0.3",
-    "pinst": "^3.0.0"
+    "pinst": "^3.0.0",
+    "prettier": "^3.0.0"
   }
 }
