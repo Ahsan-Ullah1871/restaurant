@@ -11,7 +11,7 @@
     "husky-check": "yarn lint"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx}": "yarn husky-check"
+    "*/": "yarn husky-check"
   },
   "dependencies": {
     "@types/lint-staged": "^13.2.0",
