@@ -1,8 +1,3 @@
-
-
 .button-dark {
-        @apply  inline-flex px-6 py-2 justify-center items-center rounded-3xl bg-dark text-white;
-    }
-
- 
-  
+  @apply inline-flex px-6 py-2 justify-center items-center rounded-3xl bg-dark text-white;
+}

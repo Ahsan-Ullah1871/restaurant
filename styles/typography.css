@@ -1,11 +1,7 @@
-
-
 .p3 {
-        @apply text-base font-sans font-normal ;
-    }
-
-.button-2{
-    @apply text-base font-sans font-medium;
+  @apply text-base font-sans font-normal;
 }
 
- 
+.button-2 {
+  @apply text-base font-sans font-medium;
+}
