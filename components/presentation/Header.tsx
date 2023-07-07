@@ -6,7 +6,7 @@ import Image from 'next/image';
 import Image from 'next/image';
 
 const Header = () => {
-  console.log('Here');
+  console.log('Herefgd');
   return (
     <div className=" max-w-project mx-auto flex items-center justify-between px-4">
       {/* logo Image */}
