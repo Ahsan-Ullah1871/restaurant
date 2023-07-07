@@ -9,7 +9,7 @@
     "lint": "next lint",
     "ts-lint": "tsc --noEmit --incremental --watch",
     "lint:fix": "eslint --fix",
-    "husky-check": "yarn lint ts-lint"
+    "husky-check": "yarn lint &&& yarn ts-lint"
   },
   "lint-staged": {
     "*/": "yarn husky-check"
