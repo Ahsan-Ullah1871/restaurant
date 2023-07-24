@@ -19,6 +19,10 @@ module.exports = {
       colors: {
         grey: '#55504C',
         dark: '#121110'
+      },
+      fontFamily: {
+        libre: ['var(--font-libre-bodoni)'],
+        jakarta: ['var(--font-plus-jakarta-sans)']
       }
     }
   },

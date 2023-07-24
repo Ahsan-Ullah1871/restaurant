@@ -1,9 +1,21 @@
 import Image from 'next/image';
 import './globals.css';
-import { Inter } from 'next/font/google';
+import { Inter, Libre_Bodoni, Plus_Jakarta_Sans } from 'next/font/google';
 import Header from '@/components/presentation/Header';
 
-const inter = Inter({ subsets: ['latin'] });
+export const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter'
+});
+
+export const libre_bodoni = Libre_Bodoni({
+  subsets: ['latin'],
+  variable: '--font-libre-bodoni'
+});
+export const plus_jakarta_sans = Plus_Jakarta_Sans({
+  subsets: ['latin'],
+  variable: '--font-plus-jakarta-sans'
+});
 
 export const metadata = {
   title: 'Restaurant ',
@@ -16,12 +28,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      {/* Nav */}
-      <nav className="bg-white   w-full h-auto py-7">
-        <Header />
-      </nav>
-      <body className={inter.className}>{children}</body>
+    <html
+      lang="en"
+      className={`${inter.variable} ${plus_jakarta_sans.variable} ${libre_bodoni.variable}`}
+    >
+      <body className="bg-[#111114]">
+        {/* Nav */}
+        <nav className="bg-white relative   w-full h-auto py-7">
+          <Header />
+        </nav>
+        {/* body children */}
+        {children}
+
+        {/* footer */}
+      </body>
     </html>
   );
 }

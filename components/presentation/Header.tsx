@@ -1,12 +1,11 @@
 import Link from 'next/link';
-import Logo from '@/Images/Logo.png';
 import Image from 'next/image';
 const Header = () => {
   return (
     <div className=" max-w-project mx-auto flex items-center justify-between px-4">
       {/* logo Image */}
       <Image
-        src={Logo}
+        src={'/Images/Logo.png'}
         alt="We
         b logo"
         width={75}
